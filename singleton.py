@@ -1,3 +1,5 @@
+# From https://stackoverflow.com/a/33201
+
 class Singleton(type):
     def __init__(cls, name, bases, dict):
         super(Singleton, cls).__init__(name, bases, dict)
@@ -11,3 +13,5 @@ class Singleton(type):
 
 class MyClass(object):
     __metaclass__ = Singleton
+    
+    # Other methods
